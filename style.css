@@ -5,7 +5,7 @@
   --bg-color: #f4f4f9;
 }
 
-/* Added Smooth Scrolling */
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth; 
 }
@@ -137,4 +137,16 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+/* Table Styles */
+#modal-costs {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#modal-costs th, #modal-costs td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
 }
