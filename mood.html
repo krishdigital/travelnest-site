@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Mood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>TravelNest</h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="explorer.html">Explore</a>
+            <a href="budget.html">Budget</a>
+            <a href="generator.html">Generator</a>
+            <a href="mood.html">Mood</a>
+            <a href="support.html">Support</a>
+        </div>
+    </nav>
+
+    <main style="padding: 2rem;">
+        <h2>Travel Mood & Ambient Sounds</h2>
+        <p>Click a button to toggle ambient sounds (Simulated for simplicity).</p>
+        
+        <div style="margin: 1rem 0;">
+            <button id="sound-beach">Toggle Beach Sound</button>
+            <button id="sound-forest">Toggle Forest Sound</button>
+            <button id="sound-city">Toggle City Sound</button>
+        </div>
+        <p id="playing-status" style="font-weight: bold; color: var(--secondary-color);">No sounds playing.</p>
+
+        <hr style="margin: 2rem 0;">
+
+        <h2>Track Your Travels</h2>
+        <input type="text" id="track-dest" placeholder="Enter destination name">
+        <select id="track-status">
+            <option value="Visited">Visited</option>
+            <option value="Planned">Planned</option>
+        </select>
+        <button id="add-track-btn">Add to Tracker</button>
+
+        <h3 style="margin-top: 1rem;">Your Tracker:</h3>
+        <ul id="tracker-list"></ul>
+    </main>
+
+    <script src="mood.js"></script>
+</body>
+</html>

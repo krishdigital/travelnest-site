@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>TravelNest</h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="explorer.html">Explore</a>
+            <a href="budget.html">Budget</a>
+            <a href="generator.html">Generator</a>
+            <a href="mood.html">Mood</a>
+            <a href="support.html">Support</a>
+        </div>
+    </nav>
+
+    <main style="padding: 2rem;">
+        <h2>Explore Destinations</h2>
+        <select id="continent-filter">
+            <option value="All">All Continents</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="North America">North America</option>
+        </select>
+        
+        <div id="card-container" class="card-container"></div>
+    </main>
+
+    <!-- Modal Window -->
+    <div id="dest-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <h3>Attractions:</h3>
+            <ul id="modal-attractions"></ul>
+            <h3>Costs:</h3>
+            <table border="1" width="100%" id="modal-costs">
+                <!-- Table injected by JS -->
+            </table>
+        </div>
+    </div>
+
+    <script src="explorer.js"></script>
+</body>
+</html>

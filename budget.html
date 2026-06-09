@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>TravelNest</h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="explorer.html">Explore</a>
+            <a href="budget.html">Budget</a>
+            <a href="generator.html">Generator</a>
+            <a href="mood.html">Mood</a>
+            <a href="support.html">Support</a>
+        </div>
+    </nav>
+
+    <main style="padding: 2rem;">
+        <h2>Trip Budget Planner</h2>
+        <label>Destination: <input type="text" id="b-dest"></label><br><br>
+        <label>Days: <input type="number" id="b-days"></label><br><br>
+        <label>Daily Budget ($): <input type="number" id="b-daily"></label><br><br>
+        <button id="calc-btn">Calculate & Save</button>
+
+        <h3 style="margin-top: 2rem;">Estimated Total: $<span id="total-cost">0</span></h3>
+        <p>Budget Status: <strong id="budget-status">-</strong></p>
+    </main>
+
+    <script src="budget.js"></script>
+</body>
+</html>

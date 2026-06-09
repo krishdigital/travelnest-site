@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Simple animation for the button */
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .animate-pop {
+            animation: pop 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>TravelNest</h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="explorer.html">Explore</a>
+            <a href="budget.html">Budget</a>
+            <a href="generator.html">Generator</a>
+            <a href="mood.html">Mood</a>
+            <a href="support.html">Support</a>
+        </div>
+    </nav>
+
+    <main style="padding: 2rem; text-align: center;">
+        <h2>Random Trip Generator</h2>
+        
+        <label>Travel Type: 
+            <select id="gen-type">
+                <option value="adventure">Adventure</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="cultural">Cultural</option>
+                <option value="nature">Nature</option>
+            </select>
+        </label>
+        
+        <label style="margin-left: 1rem;">Budget: 
+            <select id="gen-budget">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </label>
+        
+        <br><br>
+        <button id="surprise-btn" style="padding: 10px 20px; font-size: 16px;">Surprise Me Again!</button>
+
+        <div id="result-container" style="margin-top: 2rem; display: none;">
+            <h3 id="generated-dest"></h3>
+            <button id="wishlist-btn" style="margin-top: 1rem;">Save to Wishlist</button>
+            <p id="wishlist-msg" style="color: green; margin-top: 10px;"></p>
+        </div>
+    </main>
+
+    <script src="generator.js"></script>
+</body>
+</html>
