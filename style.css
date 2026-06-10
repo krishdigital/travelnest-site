@@ -126,6 +126,15 @@ footer {
   margin-top: 2rem;
 }
 
+/* Hamburger Menu Icon  */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
   .hero {
